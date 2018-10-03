@@ -1,0 +1,16 @@
+---
+title: "homework1"
+author: "ruby"
+date: "2018¦~10¤ë3¤é"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+123456789
+
+```{r }
+1+1
+2+2
+3+3

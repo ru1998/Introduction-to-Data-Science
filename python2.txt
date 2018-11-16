@@ -1,0 +1,157 @@
+import random
+weathers = ["晴天", "下雨"]
+weather = weathers[random.randint(0, 1)]
+if weather == "晴天":
+ print ("天氣是%s，去戶外跑步" % weather)
+else:
+ print ("天氣是%s，去健身房" % weather)
+→天氣是下雨，去健身房
+
+import random
+weathers = ["晴天", "下雨", "暴風雨"]
+weather = weathers[random.randint(0, 2)]
+if weather == "晴天":
+ print ("天氣是%s，去戶外跑步" % weather)
+elif weather == "下雨":
+ print ("天氣是%s，去健身房" % weather)
+else:
+ print ("天氣是%s，睡回籠覺" % weather)
+→天氣是晴天，去戶外跑步
+
+starrings = ["Jennifer Aniston", "Courteney Cox", "Lisa Kudrow", "Matt LeBlanc", "Matthew Perry", "David Schwimmer"]
+print (starrings[0])
+print (starrings[1])
+print (starrings[2])
+print (starrings[3])
+print (starrings[4])
+print (starrings[5])
+→Jennifer Aniston
+Courteney Cox
+Lisa Kudrow
+Matt LeBlanc
+Matthew Perry
+David Schwimmer
+
+starrings = ["Jennifer Aniston", "Courteney Cox", "Lisa Kudrow", "Matt LeBlanc", "Matthew Perry", "David Schwimmer"]
+i = 0
+while i < 6:
+ print (starrings[i])
+ i += 1
+→Jennifer Aniston
+Courteney Cox
+Lisa Kudrow
+Matt LeBlanc
+Matthew Perry
+David Schwimmer
+
+starrings = ["Jennifer Aniston", "Courteney Cox", "Lisa Kudrow", "Matt LeBlanc", "Matthew Perry", "David Schwimmer"]
+for i in range(len(starrings)):
+ print (starrings[i])
+→Jennifer Aniston
+Courteney Cox
+Lisa Kudrow
+Matt LeBlanc
+Matthew Perry
+David Schwimmer
+
+starrings = ["Jennifer Aniston", "Courteney Cox", "Lisa Kudrow", "Matt LeBlanc", "Matthew Perry", "David Schwimmer"]
+for (index, starring) in enumerate(starrings):
+ print ("%i: %s" % (index, starring))
+→0: Jennifer Aniston
+1: Courteney Cox
+2: Lisa Kudrow
+3: Matt LeBlanc
+4: Matthew Perry
+5: David Schwimmer
+
+characters = ["Rachel Green", "Monica Geller", "Phoebe Buffay", "Joey Tribbiani", "Chandler Bing", "Ross Geller"]
+starrings = ["Jennifer Aniston", "Courteney Cox", "Lisa Kudrow", "Matt LeBlanc", "Matthew Perry", "David Schwimmer"]
+for (character, star) in zip(characters, starrings):
+ print (character + " 由 " + star + " 主演")
+→Rachel Green 由 Jennifer Aniston 主演
+Monica Geller 由 Courteney Cox 主演
+Phoebe Buffay 由 Lisa Kudrow 主演
+Joey Tribbiani 由 Matt LeBlanc 主演
+Chandler Bing 由 Matthew Perry 主演
+Ross Geller 由 David Schwimmer 主演
+
+starrings = ["Jennifer Aniston", "Courteney Cox", "Lisa Kudrow", "Matt LeBlanc", "Matthew Perry", "David Schwimmer"]
+for starring in starrings:
+ print (starring)
+→Jennifer Aniston
+Courteney Cox
+Lisa Kudrow
+Matt LeBlanc
+Matthew Perry
+David Schwimmer
+
+starrings = {
+ "Rachel Green": "Jennifer Aniston",
+ "Monica Geller": "Courteney Cox",
+ "Phoebe Buffay": "Lisa Kudrow",
+ "Joey Tribbiani": "Matt LeBlanc",
+ "Chandler Bing": "Matthew Perry",
+ "Ross Geller": "David Schwimmer"
+}
+for starring in starrings:
+ print (starring)
+→Rachel Green
+Monica Geller
+Phoebe Buffay
+Joey Tribbiani
+Chandler Bing
+Ross Geller
+
+starrings = {
+ "Rachel Green": "Jennifer Aniston",
+ "Monica Geller": "Courteney Cox",
+ "Phoebe Buffay": "Lisa Kudrow",
+ "Joey Tribbiani": "Matt LeBlanc",
+ "Chandler Bing": "Matthew Perry",
+ "Ross Geller": "David Schwimmer"
+}
+for (key, value) in starrings.items():
+ print ("%s 由 %s 演出" % (key, value))
+→Rachel Green 由 Jennifer Aniston 演出
+Monica Geller 由 Courteney Cox 演出
+Phoebe Buffay 由 Lisa Kudrow 演出
+Joey Tribbiani 由 Matt LeBlanc 演出
+Chandler Bing 由 Matthew Perry 演出
+Ross Geller 由 David Schwimmer 演出
+
+starrings = [
+ ("Rachel Green", "Jennifer Aniston"),
+ ("Monica Geller", "Courteney Cox"),
+ ("Phoebe Buffay", "Lisa Kudrow"),
+ ("Joey Tribbiani", "Matt LeBlanc"),
+ ("Chandler Bing", "Matthew Perry"),
+ ("Ross Geller", "David Schwimmer")
+]
+for (character, star) in starrings:
+ print (character + " 由 " + star + " 主演")
+→Rachel Green 由 Jennifer Aniston 主演
+Monica Geller 由 Courteney Cox 主演
+Phoebe Buffay 由 Lisa Kudrow 主演
+Joey Tribbiani 由 Matt LeBlanc 主演
+Chandler Bing 由 Matthew Perry 主演
+Ross Geller 由 David Schwimmer 主演
+
+import random
+coin_flips = [7] 
+coin = ["Head", "Tail"]
+while coin_flips.count("Head") < 3:
+ coin_flips.append(coin[random.randint(0, 1)])
+print (coin_flips) # 印出每次投擲的紀錄
+print (len(coin_flips)) # 總共投擲了幾次
+→[7, 'Tail', 'Head', 'Tail', 'Head', 'Tail', 'Head']
+7
+
+import random
+coin_flips = [4] 
+coin = ["Head", "Tail"]
+while coin_flips.count("Head") < 3:
+ coin_flips.append(coin[random.randint(0, 1)])
+print (coin_flips) # 印出每次投擲的紀錄
+print (len(coin_flips)) # 總共投擲了幾次
+→[4, 'Tail', 'Head', 'Tail', 'Head', 'Tail', 'Head']
+7

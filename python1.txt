@@ -1,0 +1,226 @@
+my_int = 87
+my_float = 8.7
+my_complex = 8 + 7j
+my_bool = True
+my_str = "Introduction to Python Data Science"
+
+type(87)
+type(8.7)
+type(8 + 7j)
+type(True)
+type(False)
+type("Introduction to Python Data Science")
+→str
+
+print ("開始輸出")
+print (1, 2, 3)
+print (1, 2, 3, sep = " ", end = " ")
+print(4, 5, 6, sep="|", end="\n")
+→開始輸出
+1 2 3
+1 2 3 4|5|6
+
+score = 66
+print("小明的數學成績：%d" % score)
+print("%5s的數學成績：%5.2f" %("Jenny", 95))
+print("%5s的數學成績：%5.2f" %("Andy", 80.2))
+print("{0}今年{1}歲。" .format("王小明" , 18))
+print("{name}今年{age}歲。" .format(name = "王小明" , age = 18))
+name = "Yuni"
+chinese_grade = 80
+english_grade = 95
+print("{0:8}{1:>5}{2:>5}" .format("Yuni","80","95"))
+print("{0:<10}{1:>6}{2:>6}" .format("Yuni","80","95"))
+→小明的數學成績：66
+Jenny的數學成績：95.00
+ Andy的數學成績：80.20
+王小明今年18歲。
+王小明今年18歲。
+ruby      80   95
+ruby         80    95
+
+8 + 7
+8 - 7
+8 * 7
+8 / 7
+8 ** 2
+8 % 7
+→1
+
+8 / 7.0
+8 + (8 + 7j)
+"---"
+type(8 / 7.0)
+type(8 + (8 + 7j))
+type("---")
+→str
+
+x = "5"
+num = 5 + int(x)
+print(num)
+→10
+
+x = "5.3"
+num = 5 + float(x)
+print(num)
+→10.3
+
+x = "5.3"
+num = 5 + float(x)
+print("輸出的數值是" + str(num))
+→輸出的數值是10.3
+
+8 == 7
+8 != 7
+8 > 7
+8 < 7
+8 > 7
+→True
+
+True and True
+True and False
+False & True
+False & False
+print("---")
+True or True
+True or False
+False | True
+False | False
+print("---")
+print (not True)
+print (not False)
+→---
+---
+False
+True
+
+8 + True
+8 - False
+8 * False
+8 / True
+→8.0
+
+True == 1
+True == 1.0
+True == 1 + 0j
+print("---")
+False == 0
+False == 0.0
+False == 0 + 0j
+→---
+True
+
+'I am loving it!'
+'I\'m loving it!'
+'I don\'t think you\'ll ever be just "anybody".'
+"I don't think you'll ever be just \"anybody\"."
+→'I don\'t think you\'ll ever be just "anybody".'
+
+str1 = "Hello!" + "How Are You?"
+print(str1)
+str2 = "Hello!" * 3
+print(str2)
+str3 = "Hello!\nHow Are You?"
+print(str3)
+print ("I'm" + " loving" + " it!")
+print ("I'm loving it" + "!" * 3)
+→Hello!How Are You?
+Hello!Hello!Hello!
+Hello!
+How Are You?
+I'm loving it!
+I'm loving it!!!
+
+str = "ABCDEFGHIJK"
+print(str[0])
+print(str[-2])
+print(str[:7:2])
+print(str[2::2])
+print(str[::2])
+str1 = "Do \none \nthing \nat a time!"
+print(str1.split())
+print(str1.split( ' ', 2 ))
+→A
+J
+ACEG
+CEGIK
+ACEGIK
+['Do', 'one', 'thing', 'at', 'a', 'time!']
+['Do', '\none', '\nthing \nat a time!']
+
+str = "The first wealth is health! Health is important!"
+print ("{},長度是{}" .format(str, len(str)))
+print(str.upper())
+print(str.lower())
+print("health".capitalize())
+str.islower()
+str.count("health")
+str.strip("h!")
+str.replace("important", "重要")
+→The first wealth is health! Health is important!,長度是48
+THE FIRST WEALTH IS HEALTH! HEALTH IS IMPORTANT!
+the first wealth is health! health is important!
+Health
+'The first wealth is health! Health is 重要!'
+
+from datetime import date
+sys_date = date.today()
+print (sys_date)
+print (type(sys_date))
+→2018-11-13
+<class 'datetime.date'>
+
+from datetime import date
+start_of_2017 = date(2017, 1, 1)
+end_of_2017 = date(2017, 12, 31)
+start_of_2017
+end_of_2017
+→datetime.date(2017, 12, 31)
+
+from datetime import date
+start_of_2017 = date(2017, 1, 1)
+start_of_2018 = start_of_2017.replace(year = 2018)
+start_of_2018
+→datetime.date(2018, 1, 1)
+
+from datetime import date
+start_of_2017 = date(2017, 1, 1)
+end_of_2017 = start_of_2017.replace(month = 12, day = 31)
+days_dff = end_of_2017 - start_of_2017
+days_dff.days
+→364
+
+from datetime import time
+sleep_time = time(23, 0, 0)
+sleep_time
+type(sleep_time)
+→from datetime import time
+sleep_time = time(23, 0, 0)
+wake_up_time = sleep_time.replace(hour = 7)
+wake_up_time
+→datetime.time(7, 0)
+
+from datetime import datetime
+sys_datetime = datetime.now()
+sys_datetime
+type(sys_datetime)
+→datetime.datetime
+
+from datetime import datetime
+start_of_2017 = datetime(2017, 1, 1, 0, 0, 0)
+start_of_2017
+→datetime.datetime(2017, 1, 1, 0, 0)
+
+from datetime import datetime
+start_of_2017 = datetime(2017, 1, 1, 0, 0, 1)
+end_of_2017 = start_of_2017.replace(month = 12, day = 31, hour = 23, minute = 59, second = 59)
+end_of_2017
+→datetime.datetime(2017, 12, 31, 23, 59, 59)
+
+from datetime import datetime
+start_of_2017 = datetime(2017, 1, 1, 0, 0, 1)
+end_of_2017 = start_of_2017.replace(month = 12, day = 31, hour = 23, minute = 59, second = 59)
+date_time_diff = end_of_2017 - start_of_2017
+date_time_diff.days
+date_time_diff.seconds
+→86398

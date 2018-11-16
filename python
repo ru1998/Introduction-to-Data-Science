@@ -1,0 +1,91 @@
+import random
+dice_flips = [4]
+dice = ["One", "Two","Three","Four","Five","Six"]
+while dice_flips.count("Six") < 3:
+  dice_flips.append(dice[random.randint(0, 6)])
+print (dice_flips)
+print (len(dice_flips))
+!กา[4, 'Six', 'One', 'Three', 'Four', 'One', 'Four', 'Five', 'Two', 'One', 'Six', 'Six']
+12
+
+import random
+dice_flips = [11]
+dice = ["One", "Two","Three","Four","Five","Six"]
+while dice_flips.count("Six") < 3:
+  dice_flips.append(dice[random.randint(0, 6)])
+print (dice_flips)
+print (len(dice_flips))
+!กา[11, 'Three', 'Three', 'One', 'Four', 'Five', 'Two', 'One', 'Three', 'Four', 'Six', 'One', 'Two', 'Three', 'Five', 'Two', 'Six', 'Four', 'Five', 'Six']
+20
+
+print
+for i in range(0,101,3):
+    print (i)
+print
+for i in range(0,101,5):
+    print (i)
+print
+for i in range(0,100,15):
+    print (i)
+!กา0
+3
+6
+9
+12
+15
+18
+21
+24
+27
+30
+33
+36
+39
+42
+45
+48
+51
+54
+57
+60
+63
+66
+69
+72
+75
+78
+81
+84
+87
+90
+93
+96
+99
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+0
+15
+30
+45
+60
+75
+90
